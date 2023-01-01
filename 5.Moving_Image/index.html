@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Moving Image</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Start and Reset Buttons -->
+        <div class="input-type">
+            <input type=button onClick=timer() value='Start'>
+            <input type=button onClick=reset1() value='Reset'>
+        </div>
+
+        <!-- Message -->
+        <div id='msg' class="message"></div>
+
+        <!-- Box Container -->
+        <div class="box-container">
+            <div class="box" style="background-color:red;">
+                <!-- <h2>Red</h2> -->
+            </div>
+            <div class="box" style="background-color:blue;">
+                <!-- <h2>Blue</h2> -->
+            </div>
+            <div class="box" style="background-color:green;">
+                <!-- <h2>Green</h2> -->
+            </div>
+            <div class="box" style="background-color:yellow;">
+                <!-- <h2>Yellow</h2> -->
+            </div>
+
+            <!-- Moving Image -->
+            <div class="moving-object">
+                <img src=./help.jpg id='i1'>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JS Scripts -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
